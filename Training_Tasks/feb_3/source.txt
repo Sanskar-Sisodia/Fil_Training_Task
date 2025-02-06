@@ -1,0 +1,13 @@
+Hello I am Paritosh. Your Java code has multiple issues that need fixing:
+
+Errors & Fixes:
+Syntax Errors:
+
+The try block is not enclosed within a method (like main).
+FileOutputStream f1; is declared but not initialized inside try.
+Variables should be declared inside the method.
+Logical Errors:
+
+f1.write((char)i); should be f1.write(i); (no need to cast char).
+FileOutputStream f2 is opened for writing again ("a.txt"), which overwrites the file instead of reading it.
+The do-while loop for counting lines reads i, but i is never updated in the second loop.
